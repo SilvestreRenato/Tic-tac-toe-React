@@ -19,3 +19,11 @@
   font-size: 1.5em; /* Ajuste o tamanho do texto conforme necessário */
   /* Outros estilos... */
 }
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
