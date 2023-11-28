@@ -1,5 +1,9 @@
 .wrapper {
-  width: 70px; /* Ajuste a largura conforme necessário */
-  height: 70px; /* Ajuste a altura conforme necessário */
-  font-size: 1em; /* Ajuste o tamanho do texto conforme necessário */
+  width: 90px; /* Ajuste a largura conforme necessário */
+  height: 90px; /* Ajuste a altura conforme necessário */
+  font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

@@ -6,7 +6,9 @@ export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
   function handleClick(i) {
-    console.log(i)
+    const nextSquare = squares.slice()
+    nextSquare[i] = "X"
+    setSquares(nextSquare)
   }
 
   return (
