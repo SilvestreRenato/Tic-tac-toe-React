@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+}
+
+/* Adiciona espaçamento horizontal entre os Squares */
+.wrapper > * {
+  margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Adiciona espaçamento vertical entre as linhas de Squares */
+.wrapper + .wrapper {
+  margin-top: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Estilo para os Squares */
+.square {
+  width: 50px; /* Ajuste a largura conforme necessário */
+  height: 50px; /* Ajuste a altura conforme necessário */
+  font-size: 1.5em; /* Ajuste o tamanho do texto conforme necessário */
+  /* Outros estilos... */
+}
