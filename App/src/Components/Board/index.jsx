@@ -2,22 +2,19 @@ import { useState } from "react";
 import Square from "../Square";
 import styles from "./styles.module.css"
 
-export default function Board() {
-  const [xIsNext, setXIsNext] = useState(true)
-  const [squares, setSquares] = useState(Array(9).fill(null))
+export default function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return
     }
-    const nextSquare = squares.slice()
+    const nextSquares = squares.slice()
     if (xIsNext) {
-      nextSquare[i] = "X"
+      nextSquares[i] = "X"
     } else {
-      nextSquare[i] = "O"
+      nextSquares[i] = "O"
     }
-    setSquares(nextSquare)
-    setXIsNext(!xIsNext)
+    onPlay(nextSquares)
   }
 
   const winner = calculateWinner(squares)
